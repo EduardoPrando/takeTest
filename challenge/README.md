@@ -8,6 +8,8 @@ Este projeto foi dessenvolvido para empresa Take Blip [TakeBlip](https://digital
 
 A proposta era desenvolver uma chat bot que com o contato do cliente respondesse sobre os valores da empresa, juntamente uma api para conexão com o Chat Bot da take no backend.
 
+---
+
 Os detalhes fornecidos para a aplicação foram:
 
 Primeiramente crie uma conta no nosso portal e depois crie um chatbot usando a opção "Criar do zero".
@@ -26,7 +28,9 @@ A imagem de cada card do carrossel deve ser o avatar da Take no GitHub. O títul
 
 IMPORTANTE -> Não tentar chamar a API do git direto pelo Builder (plataforma da Take). A chamada da API do git tem que partir da API que você irá construir.
 
-Criação da API
+---
+
+##Criação da API
 
 Para criar a API solicitada, você pode usar qualquer uma das linguagens a seguir:
 C#
