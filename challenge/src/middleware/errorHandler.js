@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-module.exports = (error, req, res, next) => {
+module.exports = (_error, _req, res, _next) => {
   res.status(500).json({ message: 'Internal Server Error' });
 };
