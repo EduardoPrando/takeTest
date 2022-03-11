@@ -4,8 +4,8 @@
   "description": "Api para o teste da empresta Take conectando git e o chatbot",
   "main": "server.js",
   "scripts": {
-    "start": "node src/api/index.js",
-    "dev": "nodemon src/api/index.js",
+    "start": "node src/api/server.js",
+    "dev": "nodemon src/api/server.js",
     "dev:test": "mocha ./src/tests/*$NAME*.test.js"
   },
   "keywords": [
