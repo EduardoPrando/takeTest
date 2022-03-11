@@ -5,7 +5,14 @@ const { success } = require('../utils/dictionary/statusCode');
 
 const filterData = (data) => {
   const takeFiles = data.filter(({ language }) => language === 'C#');
-  return takeFiles;
+  const slicedResponse = takeFiles.slice(0, 5);
+  const onlyRequestedResponseItems = slicedResponse.map((response) => ({
+    title: response.name,
+    subtitle: response.description,
+    image: response.owner.avatar_url,
+  }));
+
+  return onlyRequestedResponseItems;
 };
 
 const responseFromGithub = async (req, res, next) => {
