@@ -4,8 +4,8 @@ const sinon = require('sinon');
 
 const { expect } = require('chai');
 
-const { allItemsResponse, filteredItems } = require('../utils/responseObj');
 const utilsFunctions = require('../utils/functions');
+const { allItemsResponse, filteredItems } = require('../utils/responseObj');
 const { responseFromGithub } = require('../middleware');
 
 describe('testing functionx', () => {
