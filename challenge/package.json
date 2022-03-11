@@ -1,0 +1,32 @@
+{
+  "name": "take_test",
+  "version": "1.0.0",
+  "description": "Api para o teste da empresta Take conectando git e o chatbot",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/api/index.js",
+    "dev": "nodemon src/api/index.js",
+    "dev:test": "mocha ./src/tests/*$NAME*.test.js"
+  },
+  "keywords": [
+    "node",
+    "take",
+    "chatbot"
+  ],
+  "author": "Eduardo Luiz Prando",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15",
+    "sinon": "^13.0.1"
+  }
+}
