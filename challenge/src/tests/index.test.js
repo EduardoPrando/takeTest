@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-expressions */
-/* eslint-disable no-undef */
 const sinon = require('sinon');
 
 const { expect } = require('chai');

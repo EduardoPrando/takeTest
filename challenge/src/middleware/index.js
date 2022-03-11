@@ -1,7 +1,7 @@
 const { filterData, axiosGetConnection } = require('../utils/functions');
 const { success } = require('../utils/dictionary/statusCode');
 
-const responseFromGithub = async (req, res, next) => {
+const responseFromGithub = async (_req, res, next) => {
   try {
     const data = await axiosGetConnection();
     const response = filterData(data);
