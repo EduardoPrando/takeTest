@@ -1,11 +1,11 @@
 const express = require('express');
 
 const errorHandler = require('../middleware/errorHandler');
-const { responseFromGithub } = require('../middleware');
+const { filteredDataFromResponse } = require('../middleware/filteredDataFromResponse');
 
 const app = express();
 
-app.get('/', responseFromGithub);
+app.get('/', filteredDataFromResponse);
 
 app.use(errorHandler);
 

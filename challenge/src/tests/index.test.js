@@ -4,10 +4,10 @@ const sinon = require('sinon');
 const { expect } = require('chai');
 
 const utilsFunctions = require('../utils/functions');
-const { allItemsResponse, filteredItems } = require('../utils/responseObj');
-const { responseFromGithub } = require('../middleware');
+const { allItemsResponse, filteredItems } = require('./utils/responseObj');
+const { filteredDataFromResponse } = require('../middleware/filteredDataFromResponse');
 
-describe('testing functionx', () => {
+describe('testing function', () => {
   let stub;
 
   before(async () => {
@@ -39,7 +39,7 @@ describe('testing functionx', () => {
   });
 });
 
-describe('testing responseFromGithub', () => {
+describe('testing filteredDataFromResponse', () => {
   const req = {};
   const res = {};
   const next = () => {};
@@ -49,7 +49,7 @@ describe('testing responseFromGithub', () => {
   });
 
   it('should return status 200', async () => {
-    await responseFromGithub(req, res, next);
+    await filteredDataFromResponse(req, res, next);
     const resStatus = res.status.calledWith(200);
 
     expect(resStatus).to.be.true;

@@ -6,8 +6,6 @@
 
 Este projeto foi dessenvolvido para empresa [TakeBlip](https://digital.take.net/conversas-inteligentes/).
 
-A proposta era desenvolver uma chat bot que com o contato do cliente respondesse sobre os valores da empresa, juntamente uma api para conexão com o Chat Bot da take no backend.
-
 ---
 
 ### Os detalhes fornecidos para a aplicação foram:

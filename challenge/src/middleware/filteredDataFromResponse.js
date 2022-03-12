@@ -1,16 +1,16 @@
+const { StatusCodes } = require('http-status-codes');
 const { filterData, axiosGetConnection } = require('../utils/functions');
-const { success } = require('../utils/dictionary/statusCode');
 
-const responseFromGithub = async (_req, res, next) => {
+const filteredDataFromResponse = async (_req, res, next) => {
   try {
     const data = await axiosGetConnection();
     const response = filterData(data);
-    res.status(success).json({ ...response });
+    res.status(StatusCodes.OK).json({ ...response });
   } catch (error) {
     next(error);
   }
 };
 
 module.exports = {
-  responseFromGithub,
+  filteredDataFromResponse,
 };
