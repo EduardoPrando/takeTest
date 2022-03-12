@@ -4,7 +4,7 @@
 
 ### Contexto
 
-Este projeto foi dessenvolvido para empresa [TakeBlip](https://digital.take.net/conversas-inteligentes/).
+Este projeto foi dessenvolvido para o teste técnico na empresa [TakeBlip](https://digital.take.net/conversas-inteligentes/).
 
 ---
 
