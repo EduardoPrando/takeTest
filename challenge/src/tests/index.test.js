@@ -7,7 +7,7 @@ const utilsFunctions = require('../utils/functions');
 const { allItemsResponse, filteredItems } = require('./utils/responseObj');
 const { filteredDataFromResponse } = require('../middleware/filteredDataFromResponse');
 
-describe('testing functionx', () => {
+describe('testing function', () => {
   let stub;
 
   before(async () => {
