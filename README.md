@@ -40,4 +40,6 @@ que oferecem esse serviço são: Azure, Google, Amazon, Heroku, etc.
 ---
 
 ## URL da API
+Server para deploy foi o Heroku
+
 https://take-test-edurado-luiz-prando.herokuapp.com
